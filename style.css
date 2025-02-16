@@ -1,16 +1,17 @@
-:where(:not(iframe,canvas,img,svg,video):not(svg *)){all:unset;display:revert}*,::after,::before{box-sizing:border-box}ol,ul{list-style:none}img{max-width:100%}table{border-collapse:collapse}textarea{white-space:revert}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}* html .clearfix{height:1%}.clearfix{display:block}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:where(:not(iframe,canvas,img,svg,video):not(svg *)){all:unset;display:revert}*,::after,::before{box-sizing:border-box}ol,ul{list-style:none}img{max-width:100%}table{border-collapse:collapse}textarea{white-space:revert}.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}* html .clearfix{height:1%}.clearfix{display:block}
 
-body {
-    background: linear-gradient(to bottom, #363795, #005C97);
-    height: 100vh;
-    margin: 0;
-}
+.floatLeft{float: left;}
+.floatRight{float: right;}
+.column-25{width: 25%;}
+.column-50{width: 50%;}
 
 /* Header Section*/
 
 #wrapper{
-    
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #363795, #005C97);
 }
 
 .heading{
@@ -21,8 +22,53 @@ body {
     font-family: "Roboto", serif;
     text-align: center;
     font-weight: 400;
+    padding-bottom: 1em;
 }
 
 /* Body Section*/
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    padding: 1em;
+    border-radius: 1em;
+    background: #000000;
+    color: #ffffff;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    width: max-content;
+    padding-bottom: 0.5em;
+}
+
+.display form input{
+    width: 17em;
+    height: 3.5em;
+    background: #005C97;
+    cursor: pointer;
+    margin: 0.1em;
+    font-size: 1rem;
+}
+
+.buttons form input{
+    width: 4em;
+    height: 5em;
+    background: #363795;
+    cursor: pointer;
+    margin: 0.1em 0.05em;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+.raw5 .equal{
+    width: 8.3em;
+}
 
 /* Footer Section*/
