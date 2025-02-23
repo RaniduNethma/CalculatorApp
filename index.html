@@ -23,52 +23,42 @@
         <div id="bodySection">
             <div class="container">
                 <div class="calculator">
-                    <div class="display">
-                        <form>
-                            <input class="textBox" type="text" name="display">
-                        </form>
-                    </div>
-                    <div class="buttonsArea">
-                        <div class="buttonRaw raw1">
-                            <form>
-                                <input class="buttonBox" type="button" value="AC">
+                    <form>
+                        <div class="display">
+                            <input type="text" name="display">
+                        </div>
+                        <div class="buttonsArea">
+                            <div class="buttonRaw raw1">
+                                <input class="buttonBox" type="button" value="AC" onclick="display.value = ''">
                                 <input class="buttonBox" type="button" value="DEL">
-                                <input class="buttonBox" type="button" value="%">
-                                <input class="buttonBox" type="button" value="+">
-                            </form>
-                        </div>
-                        <div class="buttonRaw raw2">
-                            <form>
-                                <input class="buttonBox" type="button" value="1">
-                                <input class="buttonBox" type="button" value="2">
-                                <input class="buttonBox" type="button" value="3">
-                                <input class="buttonBox" type="button" value="-">
-                            </form>
-                        </div>
-                        <div class="buttonRaw raw3">
-                            <form>
-                                <input class="buttonBox" type="button" value="4">
-                                <input class="buttonBox" type="button" value="5">
-                                <input class="buttonBox" type="button" value="6">
-                                <input class="buttonBox" type="button" value="*">
-                            </form>
-                        </div>
-                        <div class="buttonRaw raw4">
-                            <form>
-                                <input class="buttonBox" type="button" value="7">
-                                <input class="buttonBox" type="button" value="8">
-                                <input class="buttonBox" type="button" value="9">
-                                <input class="buttonBox" type="button" value="/">
-                            </form>
-                        </div>
-                        <div class="buttonRaw raw5">
-                            <form>
-                                <input class="buttonBox" type="button" value="0">
-                                <input class="buttonBox" type="button" value=".">
+                                <input class="buttonBox" type="button" value="%" onclick="display.value += '%'">
+                                <input class="buttonBox" type="button" value="+" onclick="display.value += '+'">
+                            </div>
+                            <div class="buttonRaw raw2">
+                                <input class="buttonBox numberBTN" type="button" value="1" onclick="display.value += '1'">
+                                <input class="buttonBox numberBTN" type="button" value="2" onclick="display.value += '2'">
+                                <input class="buttonBox numberBTN" type="button" value="3" onclick="display.value += '3'">
+                                <input class="buttonBox" type="button" value="-" onclick="display.value += '-'">
+                            </div>
+                            <div class="buttonRaw raw3">
+                                <input class="buttonBox numberBTN" type="button" value="4" onclick="display.value += '4'">
+                                <input class="buttonBox numberBTN" type="button" value="5" onclick="display.value += '5'">
+                                <input class="buttonBox numberBTN" type="button" value="6" onclick="display.value += '6'">
+                                <input class="buttonBox" type="button" value="*" onclick="display.value += '*'">
+                            </div>
+                            <div class="buttonRaw raw4">
+                                <input class="buttonBox numberBTN" type="button" value="7" onclick="display.value += '7'">
+                                <input class="buttonBox numberBTN" type="button" value="8" onclick="display.value += '8'">
+                                <input class="buttonBox numberBTN" type="button" value="9" onclick="display.value += '9'">
+                                <input class="buttonBox" type="button" value="/" onclick="display.value += '/'">
+                            </div>
+                            <div class="buttonRaw raw5">
+                                <input class="buttonBox" type="button" value="." onclick="display.value += '.'">
+                                <input class="buttonBox numberBTN" type="button" value="0" onclick="display.value += '0'">
                                 <input class="buttonBox equalButton" type="button" value="=">
-                            </form>
+                            </div>
                         </div>
-                    </div> 
+                    </form> 
                 </div>
             </div>
         </div>
