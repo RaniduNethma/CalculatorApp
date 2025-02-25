@@ -92,4 +92,12 @@
     color: #39ff14;
 }
 
+.buttonBox:hover{
+    background-color: #2c2e7b;
+}
+
+.buttonBox:active{
+    background-color: #252766;
+}
+
 /* Footer Section*/
