@@ -31,32 +31,33 @@
                     <div class="buttonsArea">
                         <div class="buttonRaw raw1">
                             <button class="buttonBox ACButton" onclick="clearDisplay()">AC</button>
-                            <button class="buttonBox deleteButton" onclick="deleteBtn()">DEL</button>
-                            <button class="buttonBox" onclick="displayCharacter('%')">%</button>
-                            <button class="buttonBox" onclick="displayCharacter('+')">+</button>
+                            <button class="buttonBox deleteButton" data-key="Backspace" onclick="deleteBtn()">DEL</button>
+                            <button class="buttonBox" data-key="%" onclick="displayCharacter('%')">%</button>
+                            <button class="buttonBox" data-key="+" onclick="displayCharacter('+')">+</button>
                         </div>
                         <div class="buttonRaw raw2">
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('1')">1</button>
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('2')">2</button>
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('3')">3</button>
-                            <button class="buttonBox" onclick="displayCharacter('-')">-</button>                        
+                            <button class="buttonBox numberBTN" data-key="7" onclick="displayCharacter('7')">7</button>
+                            <button class="buttonBox numberBTN" data-key="8" onclick="displayCharacter('8')">8</button>
+                            <button class="buttonBox numberBTN" data-key="9" onclick="displayCharacter('9')">9</button>
+                            <button class="buttonBox" data-key="-" onclick="displayCharacter('-')">-</button>                        
                         </div>
                         <div class="buttonRaw raw3">
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('4')">4</button>
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('5')">5</button>
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('6')">6</button>
-                            <button class="buttonBox" onclick="displayCharacter('*')">*</button>                            
+                            <button class="buttonBox numberBTN" data-key="4" onclick="displayCharacter('4')">4</button>
+                            <button class="buttonBox numberBTN" data-key="5" onclick="displayCharacter('5')">5</button>
+                            <button class="buttonBox numberBTN" data-key="6" onclick="displayCharacter('6')">6</button>
+                            <button class="buttonBox" data-key="*" onclick="displayCharacter('*')">*</button>                            
                         </div>
                         <div class="buttonRaw raw4">
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('7')">7</button>
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('8')">8</button>
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('9')">9</button>
-                            <button class="buttonBox" onclick="displayCharacter('/')">/</button>                            
+                            <button class="buttonBox numberBTN" data-key="1" onclick="displayCharacter('1')">1</button>
+                            <button class="buttonBox numberBTN" data-key="2" onclick="displayCharacter('2')">2</button>
+                            <button class="buttonBox numberBTN" data-key="3" onclick="displayCharacter('3')">3</button>
+                            
+                            <button class="buttonBox" data-key="/" onclick="displayCharacter('/')">/</button>                            
                         </div>
                         <div class="buttonRaw raw5">
-                            <button class="buttonBox" onclick="displayCharacter('.')">.</button>
-                            <button class="buttonBox numberBTN" onclick="displayCharacter('0')">0</button>
-                            <button class="buttonBox equalButton" onclick="calculate()">=</button>                            
+                            <button class="buttonBox" data-key="." onclick="displayCharacter('.')">.</button>
+                            <button class="buttonBox numberBTN" data-key="0" onclick="displayCharacter('0')">0</button>
+                            <button class="buttonBox equalButton" data-key="Enter" onclick="calculate()">=</button>                            
                         </div>
                     </div>
                 </div>

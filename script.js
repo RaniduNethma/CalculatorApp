@@ -24,12 +24,13 @@ function deleteBtn(){
 document.addEventListener("keydown", function(event){
     const key = event.key;
     const display = document.getElementById("display");
+    const button = document.querySelector(`button[data-key="${key}"]`);
 
     if(!isNaN(key) || "+-*/.".includes(key)){
         display.value += key;
     }
 
-    else if(key === "Enter"){
+    if(key === "Enter"){
         try{
             display.value = eval(display.value);
         }
@@ -44,5 +45,10 @@ document.addEventListener("keydown", function(event){
     
     else if(key === "Escape"){
         display.value = "";
+    }
+
+    if(button){
+        button.classList.add("active");
+        setTimeout(() => button.classList.remove("active"), 150);
     }
 });
