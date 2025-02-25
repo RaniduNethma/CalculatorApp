@@ -98,6 +98,14 @@
 
 .buttonBox:active{
     background-color: #252766;
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+
+.active{
+    background-color: #252766;
+    transform: scale(0.9);
+    transition: 0.1s;
 }
 
 /* Footer Section*/
