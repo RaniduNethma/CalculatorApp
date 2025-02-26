@@ -1,8 +1,6 @@
 const display = document.getElementById("display")
 
-function displayCharacter(Input){
-    display.value += Input;
-}
+const displayCharacter = (Input) => display.value += Input;
 
 function calculate(Input){
     try{
@@ -13,13 +11,9 @@ function calculate(Input){
     }
 }
 
-function clearDisplay(){
-    display.value = "";
-}
+const clearDisplay = () => display.value = "";
 
-function deleteBtn(){
-    display.value = display.value.slice(0, -1);
-}
+const deleteBtn = () => display.value = display.value.slice(0, -1);
 
 document.addEventListener("keydown", function(event){
     const key = event.key;
@@ -31,20 +25,15 @@ document.addEventListener("keydown", function(event){
     }
 
     if(key === "Enter"){
-        try{
-            display.value = eval(display.value);
-        }
-        catch(error){
-            display.value = "error";
-        }
+        calculate();
     }
 
-    else if(key === "Backspace" || key === "Delete"){
-        display.value = display.value.slice(0, -1);
+    if(key === "Backspace" || key === "Delete"){
+        deleteBtn();
     }
     
-    else if(key === "Escape"){
-        display.value = "";
+    if(key === "Escape"){
+        clearDisplay();
     }
 
     if(button){
